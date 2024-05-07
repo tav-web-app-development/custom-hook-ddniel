@@ -3,7 +3,7 @@ import useTime from "./useTime"
 
 export default function Clock(){
     const time = useTime()
-    const formatedTime = time.toLocaleTimeString([], {hour12: false})
+    const formatedTime = time.toLocaleTimeString()
 
     return (
         <div className="clock">
